@@ -32,7 +32,17 @@ class Post(models.Model):
 
     tags = TaggableManager()
     image = models.ImageField(upload_to='post')
+    category = models.ForeignKey('Category', related_name='post_category',on_delete=models.SET_NULL, null=True)
 
 
     def __str__(self):
         return self.title
+    
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+
+
+    def __str__(self):
+        return self.name

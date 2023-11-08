@@ -24,4 +24,5 @@ class Post(models.Model):
     content = models.TextField(max_length=20000)
     draft = models.BooleanField(default=True)
 
-
+    def __str__(self):
+        return self.title

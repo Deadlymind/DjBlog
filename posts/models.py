@@ -46,3 +46,14 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Comment(models.Model):
+    post = models.ForeignKey(Post, related_name='comment_post', on_delete=models.CASCADE)
+    user = models.CharField(max_length=50)
+    Comment = models.TextField(max_length=300)
+    created_at = models.DateTimeField(default=timezone.now)
+
+
+    def __str__(self):
+        return str(self.post)
+

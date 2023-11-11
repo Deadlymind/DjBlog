@@ -4,7 +4,8 @@
 <ul>
 {% for post in mahmoud %}
 
-    <li> {{post}} - {{post.author}} - {{post.publish_date}} </li>
+    <!-- <li> {{post}} - {{post.author}} - {{post.publish_date}} </li> -->
+    <li><a href="/posts/{{post.id}}"> {{post}} </a></li>
 
     {% endfor %}
 </ul>

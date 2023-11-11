@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "taggit",
     'django_extensions',
     'posts',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [

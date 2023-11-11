@@ -1,0 +1,10 @@
+
+<h4>Blog</h4>
+
+<ul>
+{% for post in mahmoud %}
+
+    <li> {{post}} - {{post.author}} - {{post.publish_date}} </li>
+
+    {% endfor %}
+</ul>

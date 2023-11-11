@@ -2,7 +2,7 @@
 <h4>Blog</h4>
 
 <ul>
-{% for post in mahmoud %}
+{% for post in object_list %}
 
     <!-- <li> {{post}} - {{post.author}} - {{post.publish_date}} </li> -->
     <li><a href="/posts/{{post.id}}"> {{post}} </a></li>

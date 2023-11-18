@@ -31,7 +31,7 @@ class Post(models.Model):
     # publish_date2 = models.DateTimeField(auto_now=True)
 
     tags = TaggableManager()
-    image = models.ImageField(upload_to='post')
+    image = models.ImageField(upload_to='post', null=True, blank=True)
     category = models.ForeignKey('Category', related_name='post_category',on_delete=models.SET_NULL, null=True)
 
 

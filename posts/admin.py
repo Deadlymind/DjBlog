@@ -7,7 +7,7 @@ from django_summernote.admin import SummernoteModelAdmin
 
 
 class ProductAdmin(SummernoteModelAdmin):
-    list_display = ['title', 'category','draft']
+    list_display = ['title', 'category','draft', 'category']
     list_filter = ['draft', 'tags', 'category']
     search_fields = ['title', 'tags']
     summernote_fields = ('content',)

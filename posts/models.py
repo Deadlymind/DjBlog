@@ -50,7 +50,7 @@ class Category(models.Model):
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comment_post', on_delete=models.CASCADE)
     user = models.CharField(max_length=50)
-    Comment = models.TextField(max_length=300)
+    comment = models.TextField(max_length=300)
     created_at = models.DateTimeField(default=timezone.now)
 
 

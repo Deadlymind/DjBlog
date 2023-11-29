@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'posts',
     'django_summernote',
     "django_bootstrap5",
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
